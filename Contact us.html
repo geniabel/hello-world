@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Contact us</title>
+<link href="style.css" rel="stylesheet">		
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+
+
+<style>
+			form {
+				/* Just to center the form on the page */
+				margin: 0 auto;
+				width: 400px;
+				/* To see the outline of the form */
+				padding: 1em;
+				border: 1px solid #ccc;
+				border-radius: 1em;
+			}
+
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			form li + li {
+				margin-top: 1em;
+			}
+
+			label {
+				/* To make sure that all labels have the same size and are properly aligned */
+				display: inline-block;
+				width: 90px;
+				text-align: right;
+			}
+
+			input,
+			textarea {
+				/* To make sure that all text fields have the same font settings By default, textareas have a monospace font */
+				font: 1em sans-serif;
+				/* To give the same size to all text fields */
+				width: 300px;
+				box-sizing: border-box; /* To harmonize the look & feel of text field border */
+				border: 1px solid #999;
+			}
+
+			input:focus,
+			textarea:focus {
+				/* To give a little highlight on active elements */
+				border-color: #000;
+			}
+
+			textarea {
+				/* To properly align multiline text fields with their labels */
+				vertical-align: top;
+				/* To give enough room to type some text */
+				height: 5em;
+			}
+
+			.button {
+				/* To position the buttons to the same position of the text fields */
+				padding-left: 90px;
+				/* same size as the label elements */
+			}
+
+			button {
+				/* This extra margin represent roughly the same space as the space between the labels and their text fields */
+				margin-left: 0.5em;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+<header>
+<h1>Contact us form</h1>
+</header>
+
+
+
+<form action="/my-handling-form-page" method="post">
+			<ul>
+				<li>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="user_name" />
+				</li>
+				<li>
+					<label for="mail">E-mail:</label>
+					<input type="email" id="mail" name="user_mail" />
+				</li>
+				<li>
+					<label for="msg">Message:</label>
+					<textarea id="msg" name="user_message"></textarea>
+				</li>
+				<li class="button">
+					<button type="submit">Send your message</button>
+				</li>
+			</ul>
+		</form>
+	
+
+
+<h2>Online chess</h2>
+
+<p>Online chess is chess that is played over the internet, allowing players to play against each other in real time. This is done through the use of Internet chess servers, which pair up individual players based on their rating using an Elo or similar rating system. Online chess saw a spike in growth during the quarantines of the COVID-19 pandemic. This can be attributed to both isolation and the popularity of Netflix miniseries The Queen's Gambit, which was released in October 2020.[161][162] Chess app downloads on the App Store and Google Play Store rose by 63% after the show debuted.[163] Chess.com saw more than twice as many account registrations in November as it had in previous months, and the number of games played monthly on Lichess doubled as well. There was also a demographic shift in players, with female registration on Chess.com shifting from 22% to 27% of new players.[164] Grandmaster Maurice Ashley said "A boom is taking place in chess like we have never seen maybe since the Bobby Fischer days," attributing the growth to an increased desire to do something constructive during the pandemic. USCF Women's Program Director Jennifer Shahade stated that chess works well on the internet, since pieces do not need to be reset and matchmaking is virtually instant
+
+</p>
+
+
+
+<footer>
+	
+	
+	<a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a>
+
+
+</footer>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
