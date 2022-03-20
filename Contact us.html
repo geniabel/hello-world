@@ -106,7 +106,6 @@
 </form>
 	
 
-
 <h2>Online chess</h2>
 
 <p>Online chess is chess that is played over the internet, allowing players to play against each other in real time. This is done through the use of Internet chess servers, which pair up individual players based on their rating using an Elo or similar rating system. Online chess saw a spike in growth during the quarantines of the COVID-19 pandemic. This can be attributed to both isolation and the popularity of Netflix miniseries The Queen's Gambit, which was released in October 2020. Chess app downloads on the App Store and Google Play Store rose by 63% after the show debuted. Chess.com saw more than twice as many account registrations in November as it had in previous months, and the number of games played monthly on Lichess doubled as well. There was also a demographic shift in players, with female registration on Chess.com shifting from 22% to 27% of new players.[164] Grandmaster Maurice Ashley said "A boom is taking place in chess like we have never seen maybe since the Bobby Fischer days," attributing the growth to an increased desire to do something constructive during the pandemic. USCF Women's Program Director Jennifer Shahade stated that chess works well on the internet, since pieces do not need to be reset and matchmaking is virtually instant
@@ -115,14 +114,60 @@
 
 
 
-<footer>
+<div class="footer">
+
+
+@Copyright <a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a> 2022- All Right Reserved.	
 	
-	
-	<a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a>
+
+</div>
+<style>
+
+.footer {
+position: center;
+left: 10px;
+bottom: 5px;
+right: 10px; 
+width: 1200px;
+background-color: gray;
+color: white;
+text-align: center;
+}
+
+</style>
 
 
-</footer>
+<script>
+let myButton = document.querySelector('button');
+let myHeading = document.querySelector('h1');
 
-<script src="scripts/main.js"></script>
+function setUserName() {
+  let myName = prompt('Please enter your name.');
+  localStorage.setItem('name', myName);
+  myHeading.textContent = 'Chess is cool, ' + myName;
+}
+
+if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  let storedName = localStorage.getItem('name');
+  myHeading.textContent = 'Chess is cool, ' + storedName;
+}
+
+myButton.onclick = function() {
+  setUserName();
+}
+
+function setUserName() {
+  let myName = prompt('Please enter your name.');
+  if(!myName) {
+    setUserName();
+  } else {
+    localStorage.setItem('name', myName);
+    myHeading.textContent = 'Chess is cool, ' + myName;
+  }
+}
+</script>
+
 </body>
 </html>

@@ -52,7 +52,7 @@ a {
     text-align: center;
     width: 200px;
     margin-bottom: 10px;
-    border: 5px solid black;
+    border: 3px solid black;
 }
 
 ul {
@@ -157,10 +157,14 @@ button {
 
 
 
-footer {
-  position: center;
-  width: 200px;
-  font-size: 60px;
-  text-align: center;
+.footer {
+position: fixed;
+left: 10px;
+bottom: 5px;
+right: 10px; 
+width: 1200px;
+background-color: gray;
+color: white;
+text-align: center;
 }
 
