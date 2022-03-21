@@ -158,12 +158,13 @@ button {
 
 
 .footer {
-position: fixed;
+position: center;
 left: 10px;
 bottom: 5px;
 right: 10px; 
 width: 1200px;
-background-color: gray;
+background-color: #bbbbbb;
+foreground-color: #ffffff;
 color: white;
 text-align: center;
 }
