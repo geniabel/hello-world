@@ -28,12 +28,21 @@ html {
 }
 
 body {
-  width: 1200px;
+  width: 870px;
   margin: 0 auto;
   background-color: #ffffff;
   padding: 0 20px 20px 20px;
   border: 5px solid black;
 margin-bottom: 10px;
+}
+
+main {
+    grid-area: content;
+    grid-row-start: content;
+    grid-column-start: content;
+    grid-row-end: content;
+    grid-column-end: content;
+    width: 100%;
 }
 
 h1 {
@@ -168,7 +177,7 @@ position: center;
 left: 10px;
 bottom: 5px;
 right: 10px; 
-width: 1200px;
+width: 800px;
 background-color: #bbbbbb;
 foreground-color: #ffffff;
 color: white;
