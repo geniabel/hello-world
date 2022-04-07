@@ -15,6 +15,14 @@ p, li, td {
   letter-spacing: 1px;
 }
 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 html {
   background-color: #ffffff;
 }
@@ -32,8 +40,7 @@ h1 {
   margin: 0;
   padding: 20px 0;
   color: #00539F;
-  text-shadow: 3px 3px 1px black;
-}
+  }
 
 img {
   display: block;
@@ -49,11 +56,10 @@ a {
     line-height: 40px;
     font-size: 20px;
     text-decoration: none;
-    text-align: center;
-    width: 200px;
+    text-align: left;
+    width: 400px;
     margin-bottom: 10px;
-    border: 3px solid black;
-}
+    }
 
 ul {
     padding: 0;

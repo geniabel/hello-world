@@ -56,8 +56,9 @@ aria-label="Search through site content">
 
 
 
-<article>
+<div>
         <h2>What is a chess?</h2>
+
 
 <p>Chess is a board game played between two players.It is sometimes called Western chess or international chess to distinguish it from related games such as xiangqi and shogi.
 The current form of the game emerged in Southern Europe during the second half of the 15th century after evolving from chaturanga, a similar but much older game of Indian origin.
@@ -68,41 +69,41 @@ Today, chess is one of the world's most popular games, played by millions of peo
 
 <p>You can read about chess here
 
-
+<div style="display:inline-block;vertical-align:top;">
 <a href="https://wikipedia.org/wiki/Chess">the Wiki homepage</a>  <img src="Wikipedia.PNG"
-     alt="">
+     alt=""></div>
 
 
-</p>
-
-
+</p></div>
+<div style="display:inline-block;vertical-align:top;">
 <img src="ChessSet.jpg"
-     alt="The image of a chess board">
+     alt="The image of a chess board"></div>
 
+
+
+<h3>Example of writing the chess game</h3>
 <p>Chess notation uses abbreviations for each piece, using capitalized letters. King = K, Queen = Q, Bishop = B, Knight = N, Rock = R, Pawn = no notation. </p>
+<ol>
 
-<p>Example of writing the chess game.</p>
+    <li>1. e2 - e4</li>
+    <li>2. e7 - e5</li>
+    <li>3. Kg1 - f3</li>
+  <li>4. Kb8 - c6</li>
+</ol>
 
-<table>
-<tr>
-  <td>1.</td>
-  <td>e2 - e4</td>
-  <td>e7 - e5</td>
-  <td>2.</td>
-  <td>Kg1 - f3</td>
-  <td>Kb8 - c6</td>
-</tr>
-</table>
 
-</article>
 
 
 
 <!-- the aside content can also be nested within the main content -->
       <aside>
-        <h2>Related</h2>
-
-
+        <h3>Related</h3>
+<style>
+h3 {
+  font-size: 40px;
+  text-align: left;
+}
+</style>
 <div id="outer" class="container">
     <div id="inner" class="container">
 
@@ -122,7 +123,7 @@ Today, chess is one of the world's most popular games, played by millions of peo
 <div class="footer">
 
 
-<p>@Copyright <a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a> 2022- All Right Reserved</p>	
+<p>@Copyright2022- All Right Reserved</p>	
 	
 
 </div>
@@ -146,12 +147,10 @@ a {
     line-height: 40px;
     font-size: 20px;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     width: 200px;
     margin-bottom: 10px;
-    border: 3px solid black;
-background-color: white;
-foreground-color: black;
+    
 }
 </style>
 <script src="scripts/main.js"></script>
