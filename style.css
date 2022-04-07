@@ -173,13 +173,12 @@ button {
 
 
 .footer {
-position: center;
 left: 10px;
 bottom: 5px;
 right: 10px; 
 width: 800px;
 background-color: #bbbbbb;
-foreground-color: #ffffff;
+color: #ffffff;
 color: white;
 text-align: center;
 }
