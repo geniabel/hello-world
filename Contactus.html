@@ -15,7 +15,7 @@
 			form {
 				/* Just to center the form on the page */
 				margin: 0 auto;
-				width: 400px;
+				width: 600px;
 				/* To see the outline of the form */
 				padding: 1em;
 				border: 1px solid #ccc;
@@ -35,8 +35,8 @@
 			label {
 				/* To make sure that all labels have the same size and are properly aligned */
 				display: inline-block;
-				width: 90px;
-				text-align: right;
+				width: 200px;
+				text-align: left;
 			}
 
 			input,
@@ -62,17 +62,15 @@
 				height: 5em;
 			}
 
-			.button {
-				/* To position the buttons to the same position of the text fields */
-				padding-left: 90px;
-				/* same size as the label elements */
-			}
-
 			button {
-				/* This extra margin represent roughly the same space as the space between the labels and their text fields */
-				margin-left: 0.5em;
-			}
-		
+				font-size: 16px;
+				padding: 10px; 20px;
+				text-align: left;
+}
+
+			
+
+
 .footer {
 left: 10px;
 bottom: 5px;
@@ -132,15 +130,15 @@ a {
 
 			<ul>
 				<li>
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="user_name" />
+					<label for="name" class="required"><span class="field-name">Name:</span> <strong class="required">(required)</strong></label>
+			                <input class="form-control" id="name" name="name" type="text" required="required"/>
 				</li>
 				<li>
-					<label for="mail">E-mail:</label>
-					<input type="email" id="mail" name="user_mail" />
+					<label for="email"><span class="field-name">Email:</span> <strong class="required">(required)</strong></label>
+			                <input class="form-control" id="email" name="email" type="email" required="required"/>
 				</li>
 				<li>
-					<label for="msg">Message:</label>
+					 <label for="msg"><span class="field-name">Message:</span> <strong class="required">(required)</strong></label>
 					<textarea id="msg" name="user_message"></textarea>
 				</li>
                                 <li>
